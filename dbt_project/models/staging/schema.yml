@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    # DuckDB/MotherDuck schema where raw data is ingested
+    schema: raw
+    tables:
+      - name: transactions
+      - name: holidays
+      - name: countries_metadata

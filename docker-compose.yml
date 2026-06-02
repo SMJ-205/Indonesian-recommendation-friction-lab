@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  superset:
+    build:
+      context: .
+      dockerfile: Dockerfile.superset
+    container_name: superset_dashboard
+    ports:
+      - "8088:8088"
+    environment:
+      # A secret key is required for sessions. In production, change this to a secure random value.
+      - SUPERSET_SECRET_KEY=AntigravitySecretKey2026LabFriction
+      # Offload metadata database to a lightweight SQLite file to stay within the e2-micro 1GB RAM budget
+      - SQL_ALCHEMY_DATABASE_URI=sqlite:////app/superset_home/superset.db
+    volumes:
+      # Map the superset home directory to persist sqlite database and dashboard configs on VM restarts
+      - ./superset_home:/app/superset_home
+    command: >
+      bash -c "
+      superset db upgrade &&
+      superset fab create-admin --username admin --firstname Admin --lastname User --email admin@example.com --password admin || echo 'Admin already exists' &&
+      superset init &&
+      superset run -p 8088 -h 0.0.0.0 --with-threads
+      "
+    restart: unless-stopped

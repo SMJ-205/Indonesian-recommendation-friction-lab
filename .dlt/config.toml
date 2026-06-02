@@ -1,0 +1,7 @@
+[schema]
+# Enable schema inference and normalization
+naming = "snake_case"
+
+[pipeline]
+# Default pipeline name
+pipeline_name = "recommendation_friction_pipeline"

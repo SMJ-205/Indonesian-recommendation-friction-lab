@@ -1,0 +1,8 @@
+recommendation_friction:
+  outputs:
+    dev:
+      type: duckdb
+      # Connects to local file by default, or MotherDuck via md:///recommendation_lab when path env var is set
+      path: "{{ env_var('DBT_DUCKDB_PATH', '../local_recommendation_lab.db') }}"
+      threads: 4
+  target: dev

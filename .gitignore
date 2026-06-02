@@ -1,0 +1,30 @@
+# Local databases
+*.db
+*.db.wal
+local_recommendation_lab.db
+local_recommendation_lab.db.wal
+
+# Research Plan exclusion
+GCP_Research_Plan.md
+
+# Python environment and cache
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# dlt state and local configs
+.dlt/secrets.toml
+.dlt/*.db
+.dlt/state/
+
+# dbt artifacts
+dbt_project/target/
+dbt_project/dbt_packages/
+dbt_project/logs/
+dbt_project/.user.yml
+
+# Superset local storage
+superset_home/

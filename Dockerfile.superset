@@ -1,0 +1,10 @@
+FROM apache/superset:latest
+
+# Switch to root to install driver packages
+USER root
+
+# Install DuckDB SQLAlchemy drivers and MotherDuck packages
+RUN pip install --no-cache-dir duckdb-engine duckdb motherduck
+
+# Switch back to non-root superset user
+USER superset
