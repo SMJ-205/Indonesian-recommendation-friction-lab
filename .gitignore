@@ -4,8 +4,12 @@
 local_recommendation_lab.db
 local_recommendation_lab.db.wal
 
-# Research Plan exclusion
+# Research Plan and Raw Data exclusions
 GCP_Research_Plan.md
+events.csv
+category_tree.csv
+*.csv.zip
+*.zip
 
 # Python environment and cache
 __pycache__/

@@ -2,9 +2,10 @@ version: 2
 
 sources:
   - name: raw
-    # DuckDB/MotherDuck schema where raw data is ingested
     schema: raw
     tables:
-      - name: transactions
-      - name: holidays
-      - name: countries_metadata
+      - name: retailrocket_events
+      - name: retailrocket_categories
+      - name: indonesian_holidays
+      - name: google_trends
+      - name: bps_income

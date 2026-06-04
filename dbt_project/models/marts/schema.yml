@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: fct_recommendation_performance
+    description: "Core fact table combining Retailrocket user session events with variant cohorts and context signal parameters."
+    columns:
+      - name: event_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_ab_test_significance
+    description: "Fact table containing statistical tests (Welch's T-Test and Two-Proportion Z-Test) outputting p-values for Conversion Rate and Time-to-Purchase."
+    columns:
+      - name: segment
+        tests:
+          - unique
+          - not_null
+
+  - name: mart_guardrails
+    description: "Business guardrail metrics evaluating session depth and cart abandonment rates across variant cohorts."
