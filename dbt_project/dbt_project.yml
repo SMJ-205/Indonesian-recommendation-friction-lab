@@ -1,9 +1,9 @@
-name: 'recommendation_friction'
+name: 'nusantara_context_ab_lab'
 version: '1.0.0'
 config-version: 2
 
 # Profile name matching profiles.yml configuration
-profile: 'recommendation_friction'
+profile: 'nusantara_context_ab_lab'
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]
@@ -17,7 +17,7 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  recommendation_friction:
+  nusantara_context_ab_lab:
     # Staging models are views
     staging:
       +materialized: view

@@ -1,4 +1,4 @@
-# 🛒 Indonesian Recommendation Friction Lab (v2.0)
+# 🛒 Nusantara Context-Aware Recommendation A/B Lab (v2.0)
 
 An end-to-end automated A/B testing pipeline designed to measure the causal impact of context-aware (Geographical + Cultural) recommendations on user conversion in the Indonesian e-commerce market, using real behavioral events from the **Retailrocket dataset**.
 

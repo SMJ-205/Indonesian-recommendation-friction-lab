@@ -1,4 +1,4 @@
-name: Indonesian Recommendation Friction ETL Pipeline
+name: Nusantara Context-Aware Recommendation A/B Lab ETL
 
 on:
   schedule:

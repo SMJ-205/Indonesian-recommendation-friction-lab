@@ -1,6 +1,6 @@
 # 🚀 Beginner-Friendly Deployment Guide
 
-This guide walks you through deploying the **Indonesian Recommendation Friction Lab** from scratch. 
+This guide walks you through deploying the **Nusantara Context-Aware Recommendation A/B Lab** from scratch. 
 
 We will set up:
 1.  **MotherDuck:** Serverless database to store your data.
@@ -90,10 +90,10 @@ gcloud compute ssh superset-dashboard-vm --zone=us-central1-a
 Once connected to the VM terminal, run:
 ```bash
 # Clone your repository
-git clone https://github.com/YOUR_GITHUB_USERNAME/Indonesian-recommendation-friction-lab.git
+git clone https://github.com/YOUR_GITHUB_USERNAME/nusantara-context-ab-lab.git
 
 # Enter the project directory
-cd Indonesian-recommendation-friction-lab
+cd nusantara-context-ab-lab
 
 # Start Apache Superset using Docker Compose
 sudo docker compose up --build -d

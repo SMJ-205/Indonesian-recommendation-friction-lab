@@ -1,4 +1,4 @@
-recommendation_friction:
+nusantara_context_ab_lab:
   outputs:
     dev:
       type: duckdb
